@@ -4,7 +4,7 @@
 
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/LssPolymerElements/titanium-responsive-icon)
 
-An icon that responds to focused and error events when slotted into an input such as paper input. 
+An icon that responds to focused and invalid events when slotted into an input such as paper input. 
 
 `bower install --save titanium-responsive-icon`
 

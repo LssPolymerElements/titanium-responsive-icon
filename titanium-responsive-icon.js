@@ -20,12 +20,10 @@ let TitaniumResponsiveIcon = class TitaniumResponsiveIcon extends Polymer.Elemen
         if (!this.parentElement)
             return;
         this.parentElement.addEventListener(`${this.attrForInvalid}-changed`, (e) => {
-            console.log('invalid-changed');
             if (e.detail)
                 this.invalid = e.detail.value;
         });
         this.parentElement.addEventListener(`${this.attrForFocused}-changed`, (e) => {
-            console.log('focused-changed');
             if (e.detail)
                 this.focused = e.detail.value;
         });
