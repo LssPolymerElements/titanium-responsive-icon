@@ -1,0 +1,39 @@
+{
+  "name": "titanium-responsive-icon",
+  "version": "2.0.0",
+  "keywords": [
+    "polymer 2",
+    "leavitt software",
+    "icon input"
+  ],
+  "authors": [
+    "Leavitt Software Solutions"
+  ],
+  "main": "titanium-responsive-icon.html",
+  "description": "`titanium-responsive-icon` An icon that responds to focused and error events when slotted into an input such as paper input. Polymer 2",
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "package.json",
+    "tsconfig.json",
+    ".gitignore",
+    ".vscode"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0",
+    "polymer2-ts": "^1.0.0",
+    "iron-icon": "PolymerElements/iron-icon#^2.0.0"
+  },
+  "devDependencies": {
+    "lss-iron-demo-helpers": "LssPolymerElements/iron-demo-helpers#^2.0.0",
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
+    "paper-input": "PolymerElements/paper-input#^2.0.0",
+    "paper-button": "PolymerElements/paper-button#^2.0.0",
+    "iron-icons": "PolymerElements/iron-icons#^2.0.0"
+  },
+  "demos": {
+    "Demo": "demo/index.html"
+  }
+}

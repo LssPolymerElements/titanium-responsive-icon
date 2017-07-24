@@ -1,6 +1,6 @@
 # titanium-responsive-icon
 
-[![Build status](https://ci.appveyor.com/api/projects/status/4u9pc7xohtyocve0/branch/master?svg=true)](https://ci.appveyor.com/project/aarondrabeck/titanium-responsive-icon/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/lks8c3upm568acqo/branch/master?svg=true)](https://ci.appveyor.com/project/aarondrabeck/titanium-responsive-icon/branch/master)
 
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/LssPolymerElements/titanium-responsive-icon)
 

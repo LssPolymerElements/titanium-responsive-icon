@@ -1,0 +1,56 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../polymer2-ts/polymer2-ts.html">
+<link rel="import" href="../iron-icon/iron-icon.html">
+<!--
+
+`titanium-responsive-icon` is an icon that responds to focused and error events when slotted into 
+an input such as paper input. 
+
+Example:
+    <paper-input>
+        <titanium-responsive-icon icon="my-icons:lightning" slot="prefix"></titanium-responsive-icon>
+    </paper-input>
+  
+
+The following custom properties and mixins are available for styling:
+
+Custom property | Description | Default
+----------------|-------------|----------
+`--titanium-responsive-icon-invalid-color` | The color of icon when invalid | `--error-color`
+`--titanium-responsive-icon-focused-color` | The color of icon when focused | `--primary-color`
+`--titanium-responsive-icon-icon` | Mixin applied to the icon | `{}`
+
+@group Titanium Elements
+@element titanium-responsive-icon
+@demo demo/index.html
+-->
+<dom-module id="titanium-responsive-icon">
+    <template>
+        <style>
+             :host {
+                @apply --layout-horizontal;
+                @apply --layout-flex-auto;
+            }
+
+            iron-icon {
+                color: #737373;
+                margin-right: 4px;
+                @apply --titanium-responsive-icon-icon;
+
+                /* Important -- Overwrite flex auto in polyfilled browsers 
+                because ::slotted(*) spills into iron-icon*/
+                @apply --layout-flex-none;
+            }
+
+            iron-icon[focused] {
+                color: var(--titanium-responsive-icon-focused-color, var(--primary-color));
+            }
+
+            iron-icon[invalid] {
+                color: var(--titanium-responsive-icon-invalid-color, var(--error-color));
+            }
+        </style>
+        <iron-icon focused$="[[focused]]" invalid$="[[invalid]]" icon="[[icon]]"></iron-icon>
+    </template>
+    <script src="titanium-responsive-icon.js"></script>
+</dom-module>
