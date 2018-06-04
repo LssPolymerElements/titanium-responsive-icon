@@ -35,10 +35,10 @@
         <h3>Disabled State Demo</h3>
         <demo-snippet>
             <code>
-                    <paper-input id="diabledInput"   label="Disabled Demo">  
-                        <titanium-responsive-icon icon="icons:alarm" slot="prefix"> </titanium-responsive-icon> 
-                    </paper-input>
-                </code>
+                <paper-input id="diabledInput" label="Disabled Demo">
+                    <titanium-responsive-icon icon="icons:alarm" slot="prefix"> </titanium-responsive-icon>
+                </paper-input>
+            </code>
             <paper-button onclick="var i = document.getElementById('diabledInput'); i.disabled ? i.disabled =false: i.disabled = true;"
                 raised>Toggle Disabled</paper-button>
         </demo-snippet>
@@ -46,12 +46,12 @@
         <h3>Invalid State Demo</h3>
         <demo-snippet>
             <code>
-                    <paper-input id="invalidInput"   error-message="This is a samlpe error" label="Invalid Demo">  
-                        <titanium-responsive-icon icon="icons:alarm" slot="prefix"> </titanium-responsive-icon> 
-                    </paper-input>
-                </code>
+                <paper-input id="invalidInput" error-message="This is a sample error" label="Invalid Demo">
+                    <titanium-responsive-icon icon="icons:alarm" slot="prefix"> </titanium-responsive-icon>
+                </paper-input>
+            </code>
             <paper-button id="validityButton" onclick="var i = document.getElementById('invalidInput'); i.invalid ? i.invalid =false: i.invalid = true;"
-                raised>Toggle Inputs Validity</paper-button>
+                raised>Toggle Input's Validity</paper-button>
         </demo-snippet>
     </div>
 </body>
