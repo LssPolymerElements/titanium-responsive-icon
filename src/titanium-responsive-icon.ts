@@ -1,19 +1,19 @@
-@customElement('titanium-responsive-icon')
+@Polymer.decorators.customElement('titanium-responsive-icon')
 class TitaniumResponsiveIcon extends Polymer.Element {
 
-    @property()
+    @Polymer.decorators.property()
     icon: string;
 
-    @property()
+    @Polymer.decorators.property()
     focused: boolean = false;
 
-    @property()
+    @Polymer.decorators.property()
     invalid: boolean = false;
 
-    @property()
+    @Polymer.decorators.property()
     attrForFocused: string = 'focused';
 
-    @property()
+    @Polymer.decorators.property()
     attrForInvalid: string = 'invalid';
 
     ready() {

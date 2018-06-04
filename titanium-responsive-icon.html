@@ -1,5 +1,5 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../polymer2-ts/polymer2-ts.html">
+<link rel="import" href="../polymer-decorators/polymer-decorators.html">
 <link rel="import" href="../iron-icon/iron-icon.html">
 <!--
 
@@ -27,7 +27,7 @@ Custom property | Description | Default
 <dom-module id="titanium-responsive-icon">
     <template>
         <style>
-             :host {
+            :host {
                 @apply --layout-horizontal;
                 @apply --layout-flex-auto;
             }
@@ -52,5 +52,5 @@ Custom property | Description | Default
         </style>
         <iron-icon focused$="[[focused]]" invalid$="[[invalid]]" icon="[[icon]]"></iron-icon>
     </template>
-    <script src="titanium-responsive-icon.js"></script>
+    <script src="lib/titanium-responsive-icon.js"></script>
 </dom-module>
